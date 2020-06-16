@@ -15,4 +15,14 @@ public class EmployeeReqDto {
 	private int yearsOfExperience;
 	private double salary;
 	private String address;
+	
+	public EmployeeReqDto(String firstName,String lastName,String mailId,int yearsOfExperience,double salary
+			,String address) {
+		this.address = address;
+		this.firstName =firstName;
+		this.lastName = lastName;
+		this.mailId = mailId;
+		this.salary = salary;
+		this.yearsOfExperience = yearsOfExperience;
+	}
 }

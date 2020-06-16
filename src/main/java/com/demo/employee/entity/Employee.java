@@ -6,8 +6,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.sun.istack.NotNull;
-
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,5 +25,22 @@ public class Employee {
 	private double salary;
 	private String address;
 	private String designation;
+
+	public Employee() {
+		
+	}
+
+	public Employee(Long empId, String firstName,String lastName,String mailId,int yearsOfExperience,double salary
+			,String address,String designation) {
+		this.address=address;
+		this.designation=designation;
+		this.empId=empId;
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.mailId=mailId;
+		this.salary=salary;
+		this.yearsOfExperience=yearsOfExperience;
+
+	}
 
 }
